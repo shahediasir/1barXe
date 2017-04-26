@@ -27,7 +27,7 @@ Tempdepk::computeQpResidual()
 
 // the above one for a constant forcing function
 
-  return _thermal_conductivity[_qp]*Diffusion::computeQpResidual() + 380E3*_test[_i][_qp] ;
+  return (_thermal_conductivity[_qp])*Diffusion::computeQpResidual() + 380*_test[_i][_qp] ;
 }
 
 Real

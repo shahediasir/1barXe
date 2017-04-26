@@ -27,7 +27,7 @@ TXenon::computeQpResidual()
 
 // the above one for a constant forcing function
 
-  return _thermal_conductivity[_qp]*Diffusion::computeQpResidual() ;
+  return _thermal_conductivity[_qp]*Diffusion::computeQpResidual();
 }
 
 Real
