@@ -6,6 +6,7 @@
 
 //Kernels
 #include "Tempdepk.h"
+#include "TXenon.h"
 
 //materials
 #include "Tconductivity.h"
@@ -51,6 +52,7 @@ void
 HeatCondRafiApp::registerObjects(Factory & factory)
 {
 	registerKernel(Tempdepk);
+	registerKernel(TXenon);
 	registerMaterial(Tconductivity);
 	registerMaterial(XenonT);
 	registerAux(HeatFlux);

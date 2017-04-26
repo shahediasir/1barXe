@@ -42,8 +42,13 @@
     [./k_diff]
         type = Tempdepk #HeatConduction with temperature dependent thermal conductivity
         variable = temperature
-        block = '1 2'    # specify the kernel for the domain you want to be 
+        block = 1    # specify the kernel for the domain you want to be 
     [../]
+    [./k_xe]
+        type = TXenon
+        variable = temperature
+        block = 2
+    []
 []
 
 [AuxKernels]
